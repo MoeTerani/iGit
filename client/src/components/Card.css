@@ -1,0 +1,37 @@
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s ease 0s;
+  border-radius: 20px;
+}
+
+.card__header {
+  background-color: #3c4043 !important;
+  color: rgba(255, 255, 255, 0.87) !important;
+  border-bottom: none !important;
+}
+.card {
+  color: rgba(255, 255, 255, 0.87) !important;
+  margin: 30px !important;
+  border: 1px solid #35363a !important;
+  background-color: #3c4043 !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) !important;
+}
+.card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.44) !important;
+}
+.meta {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+.extra a {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+.description {
+  font-size: 1.2rem !important;
+  padding: 5px 5px 0 5px !important;
+  color: rgba(255, 255, 255, 0.87) !important;
+}

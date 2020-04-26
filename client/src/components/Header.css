@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  background-color: #202124;
+
+  z-index: 999;
+  border-bottom: 1px solid #000;
+}
+#header__img {
+  width: 60px;
+  margin: 10px 10px 10px 30px;
+}
+
+.header__title {
+  margin-right: 30px;
+  color: white;
+}

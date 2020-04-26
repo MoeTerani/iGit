@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', 'Lato', sans-serif !important;
+  font-weight: 400;
+  color: #6d757d;
+  background-color: #35363a !important;
+}
