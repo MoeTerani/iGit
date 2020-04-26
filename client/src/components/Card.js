@@ -42,22 +42,16 @@ const CardExampleCard = (props) => {
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
-              <a>
-                <Icon name='user' />
-                {userInfo.public_repos} Public Repositories
-              </a>
+              <Icon name='user' />
+              {userInfo.public_repos} Public Repositories
             </Card.Content>
             <Card.Content extra>
-              <a>
-                <Icon name='users' />
-                {userInfo.followers} Followers
-              </a>
+              <Icon name='users' />
+              {userInfo.followers} Followers
             </Card.Content>
             <Card.Content extra>
-              <a>
-                <Icon name='user circle' />
-                {userInfo.following} Following
-              </a>
+              <Icon name='user circle' />
+              {userInfo.following} Following
             </Card.Content>
           </Card>
         </a>
