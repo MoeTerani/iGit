@@ -31,7 +31,7 @@ API_KEY=XXXXXX
 ```
 
 - start by running `npm i` insdie the Server folder and then `npm start`.
-- start by running `npm i` insdie the Client folder and the `npm start`.
+- start by running `npm i` insdie the Client folder and then `npm start`.
 
 ## 🏗️ Further Development
 
