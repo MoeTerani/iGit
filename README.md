@@ -28,12 +28,15 @@ API_KEY=XXXXXX
 ```
 
 - start by running `npm i` insdie the Server folder and then `npm start`.
-- start by running `npm i` insdie the Client folder and the `npm start`.
+- start by running `npm i` insdie the Client folder and then `npm start`.
+
 
 ## 🏗️ Further Development
 
+- Improve Error handling.
 - Removing the UI library and creating customized components in order to improve the CSS.
 - Adding redux for state management and reduce the number of API calls.
 - Adding the functionality to search for the most popular repos based on programming languages.
+
 
 ## 😎 Enjoy
