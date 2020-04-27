@@ -72,4 +72,5 @@ Card.propTypes = {
   }),
 };
 
+
 export default CardExampleCard;

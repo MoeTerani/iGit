@@ -49,6 +49,7 @@ export default function Home() {
           {popularRepo ? (
             <div className="hero__container--logo">
               {popularRepo.map((item, index) => (
+                /* eslint-disable */
                 <a
                   key={index}// eslint-disable-line 
                   href="#"
@@ -62,6 +63,7 @@ export default function Home() {
                     src={item.owner.avatar_url}
                   />
                 </a>
+                /* eslint-enable */
               ))}
             </div>
           ) : (

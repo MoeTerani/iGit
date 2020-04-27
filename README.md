@@ -30,6 +30,9 @@ API_KEY=XXXXXX
 - start by running `npm i` insdie the Server folder and then `npm start`.
 - start by running `npm i` insdie the Client folder and then `npm start`.
 
+## 📝 Eslint
+
+By running `npm run lint` you can see if there are inconsistencies based on airbnb linting settings in both client and server enviroment. 
 
 ## 🏗️ Further Development
 
