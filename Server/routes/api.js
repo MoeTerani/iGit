@@ -1,5 +1,4 @@
 const express = require('express');
-
 const router = express.Router();
 const axios = require('axios');
 
@@ -12,15 +11,20 @@ router.get('/v1/search/:name', async (req, res) => {
   const data = await axios.get(
     `https://api.github.com/search/users?q=${name}`,
     { headers: { authorization: `token ${githubToken}` } },
-  );
+  ).catch(error => {
+    console.log(error.message)
+  });
 
   res.send(data.data);
 });
+
 // Returns the user personal data
 router.post('/v1/search/user/', async (req, res) => {
   const { url } = req.body;
   const data = await axios.get(url, {
     headers: { authorization: `token ${githubToken}` },
+  }).catch(error => {
+    console.log(error.message)
   });
 
   res.send(data.data);
@@ -31,7 +35,9 @@ router.get('/v1/popular/', async (req, res) => {
   const data = await axios.get(
     'https://api.github.com/search/repositories?q=stars:>70000&sort=stars&order=desc',
     { headers: { authorization: `token ${githubToken}` } },
-  );
+  ).catch(error => {
+    console.log(error.message)
+  });
 
   res.send(data.data);
 });
@@ -42,7 +48,9 @@ router.post('/v1/contributors/', async (req, res) => {
   const data = await axios.get(
     `https://api.github.com/repos/${repo}/contributors`,
     { headers: { authorization: `token ${githubToken}` } },
-  );
+  ).catch(error => {
+    console.log(error.message)
+  });
 
   res.send(data.data);
 });

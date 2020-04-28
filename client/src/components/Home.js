@@ -23,13 +23,32 @@ export default function Home() {
 
   const handleSubmit = () => {
     setSearchResult('');
-    fetchData(inputValue).then((res) => setSearchResult(res));
-    setInputValue('');
+    fetchData(inputValue).then((res) => {
+      setSearchResult(res);
+      setInputValue('');
+    });
   };
+
   const handleClick = (arg) => {
     setSearchResult('');
     fetchContributors(arg).then((res) => setSearchResult(res));
     setInputValue(arg);
+  };
+
+  const renderCard = () => {
+    if (searchResult) {
+      return (
+        <div className="card__container">
+          <h1 className="card__container--header">{inputValue}</h1>
+          <div className="card__container--cards">
+            {searchResult.map((item, index) => (
+              <Card key={index} data={item} />// eslint-disable-line 
+            ))}
+          </div>
+        </div>
+      );
+    }
+    return <h3>Loading...</h3>;
   };
 
   return (
@@ -84,18 +103,7 @@ export default function Home() {
           </Form.Group>
         </Form>
       </div>
-      {searchResult ? (
-        <div className="card__container">
-          <h1 className="card__container--header">{inputValue}</h1>
-          <div className="card__container--cards">
-            {searchResult.map((item, index) => (
-              <Card key={index} data={item} />// eslint-disable-line 
-            ))}
-          </div>
-        </div>
-      ) : (
-        'Loading...'
-      )}
+      {error ? (<h2>{error}</h2>) : renderCard()}
     </div>
   );
 }

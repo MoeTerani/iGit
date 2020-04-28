@@ -1,5 +1,8 @@
 # iGit
 
+## 🖥 Live Demo
+https://polar-inlet-99837.herokuapp.com/#
+
 This application is a quick way to find out about the most popular GitHub repositories and faces behind them, who contributed the most.
 
 This application will provide the user with the first 30 repositories that have the highest number of stars by default.
@@ -8,7 +11,7 @@ By clicking on each of the repos, the user will receive the first 30 people who 
 
 Users also have the possibility to search for any User or Repository on Github and by clicking on each of the result, they'll be sent to the Github page on a new tab.
 
-![](https://github.com/MoeTerani/SALT-FUTURICE-ME/blob/master/client/src/Images/screenshot.jpg)
+![](https://github.com/MoeTerani/iGit/blob/master/client/src/Images/screenshot.jpg)
 
 ## 👨‍💻 Tech stack
 
@@ -21,7 +24,7 @@ Users also have the possibility to search for any User or Repository on Github a
 
 If this is your first time running the apllication:
 
-- First, create a `.env` file to increase the limit-rate of the Github API to 5000 instead of the public 60 request per hour. The key that you have recieved needs to be saved at `Server/.env`.
+- First, create a `.env` file to increase the limit-rate of the Github API to 5000 instead of the 60 public request per hour. The key that you have recieved needs to be saved at `Server/.env`.
 
 ```
 API_KEY=XXXXXX
