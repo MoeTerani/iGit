@@ -8,7 +8,7 @@ By clicking on each of the repos, the user will receive the first 30 people who 
 
 Users also have the possibility to search for any User or Repository on Github and by clicking on each of the result, they'll be sent to the Github page on a new tab.
 
-![](https://github.com/MoeTerani/SALT-FUTURICE-ME/blob/master/client/src/Images/screenshot.jpg)
+![](https://github.com/MoeTerani/iGit/blob/master/client/src/Images/screenshot.jpg)
 
 ## 👨‍💻 Tech stack
 
